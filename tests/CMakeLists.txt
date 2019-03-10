@@ -59,6 +59,7 @@ add_test(clang-analyzer
     ${CMAKE_CURRENT_SOURCE_DIR}/exitcode-for-output.sh
     clang
     -I${CMAKE_CURRENT_SOURCE_DIR}/../include
+    -DPTHREAD
     --analyze
     -Xanalyzer
     -analyzer-output=text

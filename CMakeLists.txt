@@ -153,6 +153,8 @@ endif()
 ########################################################################
 # Find LibRTLSDR build dependencies
 ########################################################################
+find_package(Threads)
+
 set(ENABLE_RTLSDR ON CACHE STRING "Enable RTL-SDR (lbrtlsdr) driver support")
 set_property(CACHE ENABLE_RTLSDR PROPERTY STRINGS AUTO ON OFF)
 if(ENABLE_RTLSDR) # AUTO / ON
